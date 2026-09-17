@@ -348,12 +348,14 @@ p:last-child{ margin-bottom:0; }
   border-left:2px solid var(--border);
 }
 
-.timeline li{
+.timeline > li{
   position:relative;
   padding:0 0 0 24px;
 }
 
-.timeline li::before{
+.timeline > li + li{ margin-top:32px; }
+
+.timeline > li::before{
   content:"";
   position:absolute;
   left:-6px;
@@ -380,6 +382,38 @@ p:last-child{ margin-bottom:0; }
 }
 
 .timeline p{ margin:10px 0 0; font-size:15px; }
+
+.courses{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:13px 0 0;
+  padding:0;
+}
+
+.courses li{
+  flex:0 0 auto;
+  font-size:13.5px;
+  line-height:1.5;
+  white-space:nowrap;
+  padding:4px 12px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--body);
+}
+
+.entry-link{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin-top:14px;
+  font-size:14px;
+  font-weight:500;
+}
+
+.entry-link svg{ width:15px; height:15px; flex:none; }
 
 /* Buttons ------------------------------------------------------ */
 .actions{
@@ -572,8 +606,10 @@ p:last-child{ margin-bottom:0; }
       <h2 id="about">About</h2>
       <p>
         I am an undergraduate student in Electronic Information Engineering at
-        <strong>Westlake University</strong>, and I am currently doing research at
-        <strong>CVGL Lab</strong> with <strong>Prof. Peidong Liu</strong>.
+        <strong>Westlake University</strong>, where I began my studies in <strong>2023</strong>.
+        In <strong>Fall 2025</strong> I was an exchange student in <strong>Computer Science</strong>
+        at the <strong>University of California, Berkeley</strong>. I am currently doing research
+        at <strong>CVGL Lab</strong> with <strong>Prof. Peidong Liu</strong>.
       </p>
       <p>
         My main research interest is <strong>humanoid robot manipulation</strong>: enabling
@@ -632,11 +668,33 @@ p:last-child{ margin-bottom:0; }
       <ul class="timeline">
         <li>
           <h3>Westlake University</h3>
-          <p class="meta">Undergraduate &middot; Electronic Information Engineering &middot; Hangzhou, China</p>
+          <p class="meta">Undergraduate &middot; Electronic Information Engineering &middot; 2023 &ndash; Present &middot; Hangzhou, China</p>
           <p>
             Coursework and research training in electronic information engineering, with a
-            focus on robotics and computer vision.
+            focus on robotics and computer vision. Currently doing research at CVGL Lab with
+            Prof. Peidong Liu.
           </p>
+        </li>
+
+        <li>
+          <h3>University of California, Berkeley</h3>
+          <p class="meta">Exchange Student &middot; Computer Science &middot; Fall 2025 &middot; Berkeley, USA</p>
+          <p>Exchange semester in Computer Science, taking courses in:</p>
+
+          <ul class="courses">
+            <li>Machine Structures</li>
+            <li>Computer Security</li>
+            <li>Introduction to Computer Vision</li>
+          </ul>
+
+          <a class="entry-link" href="https://wanghaoze-sys.github.io/cs180/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13.6 4.4h6v6"/>
+              <path d="M19.6 4.4 11 13"/>
+              <path d="M18.1 14.2v4.3a1.5 1.5 0 0 1-1.5 1.5H5.6a1.5 1.5 0 0 1-1.5-1.5V7.6a1.5 1.5 0 0 1 1.5-1.5h4.3"/>
+            </svg>
+            Course project &mdash; Intro to Computer Vision
+          </a>
         </li>
       </ul>
     </section>
