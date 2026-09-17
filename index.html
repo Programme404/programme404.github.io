@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Haoze Wang &middot; Humanoid Robot Manipulation</title>
-<meta name="description" content="Haoze Wang is an undergraduate student in Electronic Information Engineering at Westlake University, working on humanoid robot manipulation at CVGL Lab with Prof. Peidong Liu.">
+<meta name="description" content="Haoze Wang is an undergraduate student in Electronic Information Engineering at Westlake University. His research interests are humanoid robot manipulation and software engineering; he is currently doing research at CVGL Lab with Prof. Peidong Liu.">
 <meta name="author" content="Haoze Wang">
 <meta name="theme-color" content="#1f4e79">
 <link rel="canonical" href="https://programme404.github.io/">
 
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Haoze Wang">
-<meta property="og:description" content="Undergraduate in Electronic Information Engineering at Westlake University. Research on humanoid robot manipulation at CVGL Lab.">
+<meta property="og:description" content="Undergraduate in Electronic Information Engineering at Westlake University. Research interests: humanoid robot manipulation and software engineering. Currently at CVGL Lab.">
 <meta property="og:url" content="https://programme404.github.io/">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%231f4e79'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='31' fill='%23ffffff' text-anchor='middle'%3EHW%3C/text%3E%3C/svg%3E">
@@ -165,11 +165,17 @@ h1{
   color:var(--muted);
 }
 
+.taglines{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:20px;
+}
+
 .tagline{
   display:inline-flex;
   align-items:center;
   gap:9px;
-  margin-top:20px;
   padding:7px 15px 7px 13px;
   border-radius:999px;
   background:var(--accent-soft);
@@ -510,18 +516,29 @@ p:last-child{ margin-bottom:0; }
       <p class="hero-role">Undergraduate &middot; Electronic Information Engineering</p>
       <p class="hero-affil">Westlake University &middot; CVGL Lab</p>
 
-      <span class="tagline">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="2.9" r="1.4"/>
-          <path d="M12 4.3v2.2"/>
-          <rect x="3.8" y="6.5" width="16.4" height="12.2" rx="3.2"/>
-          <path d="M1.6 11.2v3.8M22.4 11.2v3.8"/>
-          <circle cx="9.2" cy="11.8" r="1.15" fill="currentColor" stroke="none"/>
-          <circle cx="14.8" cy="11.8" r="1.15" fill="currentColor" stroke="none"/>
-          <path d="M9.6 15.3h4.8"/>
-        </svg>
-        Humanoid Robot Manipulation
-      </span>
+      <div class="taglines">
+        <span class="tagline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="2.9" r="1.4"/>
+            <path d="M12 4.3v2.2"/>
+            <rect x="3.8" y="6.5" width="16.4" height="12.2" rx="3.2"/>
+            <path d="M1.6 11.2v3.8M22.4 11.2v3.8"/>
+            <circle cx="9.2" cy="11.8" r="1.15" fill="currentColor" stroke="none"/>
+            <circle cx="14.8" cy="11.8" r="1.15" fill="currentColor" stroke="none"/>
+            <path d="M9.6 15.3h4.8"/>
+          </svg>
+          Humanoid Robot Manipulation
+        </span>
+
+        <span class="tagline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m8.6 7.9-4.3 4.1 4.3 4.1"/>
+            <path d="m15.4 7.9 4.3 4.1-4.3 4.1"/>
+            <path d="M13.5 5.4 10.5 18.6"/>
+          </svg>
+          Software Engineering
+        </span>
+      </div>
     </div>
   </div>
 </header>
@@ -612,9 +629,10 @@ p:last-child{ margin-bottom:0; }
         at <strong>CVGL Lab</strong> with <strong>Prof. Peidong Liu</strong>.
       </p>
       <p>
-        My main research interest is <strong>humanoid robot manipulation</strong>: enabling
-        humanoid platforms to understand their surroundings, act with dexterous hands, and
-        interact reliably with the physical world.
+        My research interests are <strong>humanoid robot manipulation</strong> and
+        <strong>software engineering</strong>. On the robotics side, I am interested in
+        enabling humanoid platforms to understand their surroundings, act with dexterous
+        hands, and interact reliably with the physical world.
       </p>
     </section>
 
@@ -639,6 +657,24 @@ p:last-child{ margin-bottom:0; }
             Humanoid manipulation brings together robot perception, motion planning, control,
             and learning, with the goal of letting humanoid robots carry out useful physical
             tasks in human-centred environments.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="fact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m8.6 7.9-4.3 4.1 4.3 4.1"/>
+            <path d="m15.4 7.9 4.3 4.1-4.3 4.1"/>
+            <path d="M13.5 5.4 10.5 18.6"/>
+          </svg>
+        </span>
+        <div>
+          <h3>Software Engineering</h3>
+          <p>
+            I am also interested in software engineering: designing and building maintainable
+            systems and tooling, and applying sound engineering practice to research code and
+            robotics software.
           </p>
         </div>
       </div>
